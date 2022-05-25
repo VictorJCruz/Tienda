@@ -1,0 +1,31 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/Other/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : 24 may. 2022, 18:12:18
+    Author     : vicjc
+*/
+/*en css se llaman reglas, al conjunto de atributos a utilizar
+unidades de medida:vh(1/100),px=pixeles,cm,%=relativo al tamaño del elemento padre
+padding; crea un espacio entre componentes 
+box sizing: ancho=acho+borde+padding display:comose muestra el comportamiento, un bloque de nivel*/
+
+
+
+* {
+    margin:0;
+    padding:0;
+    
+}
+.container{
+    height:100vh;
+    width:100%;
+    background-image:url(../images/background.png);
+    background-position: center;
+    background-size: cover;
+    padding-left: 5%;
+    padding-right: 5%;
+    box-sizing: border-box;
+    position: relative;
+} 
