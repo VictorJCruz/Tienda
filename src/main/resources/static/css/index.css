@@ -1,0 +1,75 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/Other/CascadeStyleSheet.css to edit this template
+*/
+/* 
+
+box-sizing: define el tamaño de nuestros
+contenedores segun las medidas del border, 
+magin, contend y padding.
+
+content-box: toma en cuenta, contenido, 
+borde y padding para el calculo de la caja.
+
+border-box: modifica valores de contenido 
+para que coincida con nuestro ancho y alto.
+
+position: es otra propiedad que nos permite desplazar o mover nuestros contenedores
+static
+relative
+absolute
+fixed
+sticky
+
+    Created on : 31 may. 2022, 18:20:28
+    Author     : vicjc
+*/
+
+
+.block {
+background-color: bisque;
+width: 200px;
+height:200px;
+padding: 20px;
+border: 20px solid grey;
+box-sizing: border-box;
+
+}
+
+.static {
+position:static;
+border:3px solid darkseagreen;
+top:400px;  /*aun que le pongamos esto no cambia ya que es static*/
+left:50px;  /*aun que le pongamos esto no cambia ya que es static*/
+
+}
+
+
+.relative {
+position: relative;
+border: 3px solid aquamarine;
+top:25px;/*si ponemos esto le damos un acomodo que queramos*/
+left:25px;/*si ponemos esto le damos un acomodo que queramos*/
+width:400px;
+height: 450px;
+}
+
+
+
+
+.fixed {
+position: fixed;
+border: 3px solid aquamarine;
+top:150px;/*Se mueve por el scrol*/
+left:50px;/*Se mueve por el scrol*/
+}
+
+
+.absolute {
+position: absolute;
+border: 3px solid aquamarine;
+top:80px;/*este va dentro del relative*/
+left:50px;
+width: 300px;
+height: 100px;
+}
