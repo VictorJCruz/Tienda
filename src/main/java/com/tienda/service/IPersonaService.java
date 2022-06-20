@@ -11,14 +11,19 @@ import java.util.List;
  *
  * @author vicjc
  */
-public interface IPersonaService {
-    public List<Persona>getAllPersona();
-    public Persona findByNombre(String nombre);
-     public Persona getPersonaById(long id);
-      public void savePersona(Persona persona);
-      public void delete(long id);
+import com.tienda.entity.Persona;
+import java.util.List;
 
-    public List<Persona> GetAllPersona();
-    
-    
+
+
+/**
+*
+* @author vijcc
+*/
+public interface IPersonaService {
+public List<Persona> getAllPersona();
+public Persona getPersonaById (long id);
+public void savePersona(Persona persona);
+public void delete (long id);
+
 }
